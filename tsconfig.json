@@ -8,6 +8,18 @@
     },
     {
       "path": "./apps/demo"
+    },
+    {
+      "path": "./apps/shell-e2e"
+    },
+    {
+      "path": "./apps/shell"
+    },
+    {
+      "path": "./apps/exampleComponent-e2e"
+    },
+    {
+      "path": "./apps/exampleComponent"
     }
   ]
 }
