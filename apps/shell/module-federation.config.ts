@@ -1,4 +1,4 @@
-import { ModuleFederationConfig } from '@nx/module-federation';
+import { ModuleFederationConfig } from '@nx/module-federation'
 
 const config: ModuleFederationConfig = {
   name: 'shell',
@@ -15,9 +15,9 @@ const config: ModuleFederationConfig = {
    *
    */
   remotes: ['exampleComponent'],
-};
+}
 
 /**
  * Nx requires a default export of the config to allow correct resolution of the module federation graph.
  **/
-export default config;
+export default config

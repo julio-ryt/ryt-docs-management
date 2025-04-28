@@ -1,8 +1,8 @@
-import * as React from 'react';
-import NxWelcome from './nx-welcome';
-import { Link, Route, Routes } from 'react-router-dom';
+import * as React from 'react'
+import NxWelcome from './nx-welcome'
+import { Link, Route, Routes } from 'react-router-dom'
 
-const ExampleComponent = React.lazy(() => import('exampleComponent/Module'));
+const ExampleComponent = React.lazy(() => import('exampleComponent/Module'))
 
 export function App() {
   return (
@@ -20,7 +20,7 @@ export function App() {
         <Route path="/example-component" element={<ExampleComponent />} />
       </Routes>
     </React.Suspense>
-  );
+  )
 }
 
-export default App;
+export default App

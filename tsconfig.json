@@ -4,12 +4,6 @@
   "files": [],
   "references": [
     {
-      "path": "./apps/demo-e2e"
-    },
-    {
-      "path": "./apps/demo"
-    },
-    {
       "path": "./apps/shell-e2e"
     },
     {

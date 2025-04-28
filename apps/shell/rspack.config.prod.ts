@@ -1,13 +1,13 @@
-import { NxAppRspackPlugin } from '@nx/rspack/app-plugin';
-import { NxReactRspackPlugin } from '@nx/rspack/react-plugin';
+import { NxAppRspackPlugin } from '@nx/rspack/app-plugin'
+import { NxReactRspackPlugin } from '@nx/rspack/react-plugin'
 import {
   NxModuleFederationPlugin,
   NxModuleFederationDevServerPlugin,
-} from '@nx/module-federation/rspack';
-import { ModuleFederationConfig } from '@nx/module-federation';
-import { join } from 'path';
+} from '@nx/module-federation/rspack'
+import { ModuleFederationConfig } from '@nx/module-federation'
+import { join } from 'path'
 
-import baseConfig from './module-federation.config';
+import baseConfig from './module-federation.config'
 
 const prodConfig: ModuleFederationConfig = {
   ...baseConfig,
@@ -28,8 +28,8 @@ const prodConfig: ModuleFederationConfig = {
    *   ['app2', 'http://example.com/path/to/app2/remoteEntry.js'],
    * ]
    */
-  remotes: [['example-component', 'http://localhost:4201/']],
-};
+  remotes: [['exampleComponent', 'http://localhost:4202/']],
+}
 
 export default {
   output: {
@@ -63,4 +63,4 @@ export default {
     new NxModuleFederationPlugin({ config: prodConfig }, { dts: false }),
     new NxModuleFederationDevServerPlugin({ config: prodConfig }),
   ],
-};
+}

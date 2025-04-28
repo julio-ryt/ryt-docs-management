@@ -1,12 +1,12 @@
-import { NxAppRspackPlugin } from '@nx/rspack/app-plugin';
-import { NxReactRspackPlugin } from '@nx/rspack/react-plugin';
+import { NxAppRspackPlugin } from '@nx/rspack/app-plugin'
+import { NxReactRspackPlugin } from '@nx/rspack/react-plugin'
 import {
   NxModuleFederationPlugin,
   NxModuleFederationDevServerPlugin,
-} from '@nx/module-federation/rspack';
-import { join } from 'path';
+} from '@nx/module-federation/rspack'
+import { join } from 'path'
 
-import config from './module-federation.config';
+import config from './module-federation.config'
 
 export default {
   output: {
@@ -40,4 +40,4 @@ export default {
     new NxModuleFederationPlugin({ config }, { dts: false }),
     new NxModuleFederationDevServerPlugin({ config }),
   ],
-};
+}

@@ -6,5 +6,12 @@
   "tags": [],
   "implicitDependencies": ["shell"],
   "// targets": "to see all targets run: nx show project shell-e2e --web",
-  "targets": {}
+  "targets": {},
+  "serve": {
+    "executor": "@nx/rspack:dev-server",
+    "options": {
+      "buildTarget": "shell:build",
+      "port": 4200
+    }
+  }
 }

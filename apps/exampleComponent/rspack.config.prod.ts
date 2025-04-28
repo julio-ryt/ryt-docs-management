@@ -1,1 +1,1 @@
-export default require('./rspack.config');
+export default require('./rspack.config')

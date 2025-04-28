@@ -4,7 +4,8 @@
     "outDir": "out-tsc/cypress",
     "allowJs": true,
     "types": ["cypress", "node"],
-    "sourceMap": false
+    "sourceMap": false,
+    "moduleResolution": "bundler"
   },
   "include": [
     "**/*.ts",

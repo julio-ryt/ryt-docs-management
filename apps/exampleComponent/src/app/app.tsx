@@ -1,12 +1,11 @@
-import NxWelcome from './nx-welcome';
-import '../styles.css';
+import '../styles.css'
 
 export function App() {
   return (
-    <div className='bg-slate-300'>
-      <NxWelcome title="exampleComponent" />
-    </div>
-  );
+    <section className="bg-slate-700 h-screen w-full grid place-items-center">
+      <h1 className="text-white uppercase">Welcome exampleComponent</h1>
+    </section>
+  )
 }
 
-export default App;
+export default App

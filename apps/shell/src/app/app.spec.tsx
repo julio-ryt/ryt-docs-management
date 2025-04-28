@@ -1,7 +1,7 @@
-import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
+import { render } from '@testing-library/react'
+import { BrowserRouter } from 'react-router-dom'
 
-import App from './app';
+import App from './app'
 
 describe('App', () => {
   it('should render successfully', () => {
@@ -9,18 +9,16 @@ describe('App', () => {
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    );
-    expect(baseElement).toBeTruthy();
-  });
+    )
+    expect(baseElement).toBeTruthy()
+  })
 
   it('should have a greeting as the title', () => {
     const { getAllByText } = render(
       <BrowserRouter>
         <App />
       </BrowserRouter>
-    );
-    expect(
-      getAllByText(new RegExp('Welcome shell', 'gi')).length > 0
-    ).toBeTruthy();
-  });
-});
+    )
+    expect(getAllByText(new RegExp(/Welcome shell/i)).length > 0).toBeTruthy()
+  })
+})
